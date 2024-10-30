@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    @keyframes circle {
+      0% {
+        top: 60px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.7);
+      }
+      40% {
+        height: 20px;
+        border-radius: 50%;
+        transform: scaleX(1);
+      }
+      100% {
+        top: 0;
+      }
+    }
+  
+    .animate-circle {
+      animation: circle 0.5s alternate infinite ease;
+    }
+  
+    .animate-shadow {
+      animation: shadow 0.5s alternate infinite ease;
+    }
+  
+    .delay-100 {
+      animation-delay: 0.2s;
+    }
+  
+    .delay-200 {
+      animation-delay: 0.3s;
+    }
+  
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  }
+  
